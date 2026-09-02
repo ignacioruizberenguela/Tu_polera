@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle del producto</title>
+
+    <!-- Bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <!-- Nombre de la tienda -->
+
+            <a class="navbar-brand" href="index.html">
+                Tu tienda
+            </a>
+
+
+            <!-- Botón para celular -->
+
+            <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Menú -->
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+
+                        <a 
+                            class="nav-link"
+                            href="index.html">
+
+                            Inicio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a 
+                            class="nav-link active"
+                            href="productos.html">
+
+                            Productos
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a 
+                            class="nav-link"
+                            href="nosotros.html">
+
+                            Nosotros
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a 
+                            class="nav-link"
+                            href="blogs.html">
+
+                            Blogs
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a 
+                            class="nav-link"
+                            href="contacto.html">
+
+                            Contacto
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Carrito -->
+
+                <a 
+                    href="carrito.html"
+                    class="btn btn-outline-light">
+
+                    🛒 Carrito
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         DETALLE PRODUCTO
+    ========================== -->
+
+    <main>
+
+        <section class="container py-5">
+
+            <div class="row align-items-center">
+
+
+                <!-- IMAGEN -->
+
+                <div class="col-12 col-md-6">
+
+                    <img 
+                        src="imagenes/imagen1.png"
+                        alt="Polera personalizada"
+                        class="img-fluid rounded shadow">
+
+                </div>
+
+
+                <!-- INFORMACIÓN -->
+
+                <div class="col-12 col-md-6">
+
+                    <h1 class="mb-3">
+                        Polera personalizada
+                    </h1>
+
+
+                    <p class="fs-3 fw-bold text-primary">
+                        $12.990
+                    </p>
+
+
+                    <p class="mb-4">
+
+                        Diseña tu propia polera personalizada
+                        y crea un producto único.
+
+                    </p>
+
+
+                    <!-- TALLA -->
+
+                    <label 
+                        for="talla"
+                        class="form-label">
+
+                        Selecciona una talla:
+
+                    </label>
+
+
+                    <select 
+                        id="talla"
+                        class="form-select mb-3">
+
+                        <option selected>
+                            Seleccionar talla
+                        </option>
+
+                        <option value="S">
+                            S
+                        </option>
+
+                        <option value="M">
+                            M
+                        </option>
+
+                        <option value="L">
+                            L
+                        </option>
+
+                        <option value="XL">
+                            XL
+                        </option>
+
+                    </select>
+
+
+                    <!-- CANTIDAD -->
+
+                    <label 
+                        for="cantidad"
+                        class="form-label">
+
+                        Cantidad:
+
+                    </label>
+
+
+                    <input
+                        type="number"
+                        id="cantidad"
+                        class="form-control mb-4"
+                        value="1"
+                        min="1">
+
+
+                    <!-- BOTÓN -->
+
+                    <button 
+                        class="btn btn-primary btn-lg">
+
+                        🛒 Añadir al carrito
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 - Tu tienda
+        </p>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+</body>
+
+</html>
