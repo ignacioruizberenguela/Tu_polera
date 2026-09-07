@@ -138,11 +138,9 @@ footer {
 }
 
 
-/* ==========================================
-   PÁGINA DE REGISTRO (ESTILO LINKEDIN / MODERN)
-   ========================================== */
 
-/* Centrado vertical y horizontal de la pantalla */
+
+
 body.pagina-registro {
     background-color: #f3f2ef;
     min-height: 100vh;
@@ -153,7 +151,7 @@ body.pagina-registro {
     padding: 20px 0;
 }
 
-/* Tarjeta contenedora centrada */
+
 .pagina-registro .registro-container {
     width: 100%;
     max-width: 440px;
@@ -164,7 +162,7 @@ body.pagina-registro {
     box-sizing: border-border-box;
 }
 
-/* Encabezados */
+
 .pagina-registro h2 {
     text-align: left;
     margin-top: 0;
@@ -181,13 +179,13 @@ body.pagina-registro {
     margin-bottom: 1.5rem;
 }
 
-/* Organización vertical del formulario */
+
 .pagina-registro form {
     display: flex;
     flex-direction: column;
 }
 
-/* Etiquetas */
+
 .pagina-registro label {
     display: block;
     font-size: 0.85rem;
@@ -197,7 +195,7 @@ body.pagina-registro {
     margin-bottom: 0.25rem;
 }
 
-/* Inputs y Selects */
+
 .pagina-registro input[type="text"],
 .pagina-registro input[type="email"],
 .pagina-registro input[type="password"],
@@ -212,7 +210,7 @@ body.pagina-registro {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Enfoque de campos (Focus) */
+
 .pagina-registro input:focus,
 .pagina-registro select:focus {
     outline: none;
@@ -220,7 +218,7 @@ body.pagina-registro {
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Checkbox Términos */
+
 .pagina-registro .terminos {
     display: flex;
     align-items: center;
@@ -262,7 +260,7 @@ body.pagina-registro {
     transform: translateY(0);
 }
 
-/* Enlace a Iniciar Sesión */
+
 .pagina-registro .iniciar-sesion {
     text-align: center;
     margin-top: 1.5rem;
@@ -281,9 +279,7 @@ body.pagina-registro {
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 576px) {
     .pagina-registro .registro-container {
@@ -301,4 +297,90 @@ body.pagina-registro {
     .pagina-registro h2 {
         font-size: 24px;
     }
+}
+/* =========================
+   PÁGINA DE USUARIO
+========================= */
+
+.pagina-usuario {
+    min-height: 100vh;
+    background-color: #f4f6f8;
+}
+
+
+/* =========================
+   BIENVENIDA
+========================= */
+
+.usuario-bienvenida {
+    text-align: center;
+}
+
+.usuario-bienvenida h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.usuario-bienvenida p {
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.usuario-card {
+    height: 100%;
+
+    padding: 35px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.2s,
+                box-shadow 0.2s;
+}
+
+
+.usuario-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Iconos */
+
+.usuario-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Títulos */
+
+.usuario-card h2 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+
+
+.usuario-card p {
+    color: #666;
+
+    min-height: 50px;
+
+    margin-bottom: 25px;
 }

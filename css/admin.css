@@ -1,6 +1,4 @@
-/* =========================
-   ADMINISTRACIÓN
-========================= */
+
 
 .pagina-admin {
     min-height: 100vh;
@@ -10,10 +8,6 @@
     font-family: Arial, sans-serif;
 }
 
-
-/* =========================
-   NAVBAR
-========================= */
 
 .pagina-admin .navbar {
     padding: 15px 0;
@@ -25,9 +19,7 @@
 }
 
 
-/* =========================
-   ENCABEZADO
-========================= */
+
 
 .admin-header {
     text-align: center;
@@ -50,9 +42,7 @@
 }
 
 
-/* =========================
-   TARJETAS
-========================= */
+
 
 .admin-card {
     background-color: white;
@@ -73,7 +63,7 @@
 }
 
 
-/* Iconos */
+
 
 .admin-icon {
     font-size: 50px;
@@ -82,7 +72,7 @@
 }
 
 
-/* Títulos */
+
 
 .admin-card h2 {
     font-size: 25px;
@@ -100,9 +90,7 @@
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+
 
 .pagina-admin footer {
     margin-top: 50px;
