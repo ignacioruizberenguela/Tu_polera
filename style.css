@@ -302,3 +302,46 @@ body.pagina-registro {
         font-size: 24px;
     }
 }
+
+.font-row {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 0;
+      border-bottom: 1px solid #334155;
+}
+
+.badge {
+      background: #334155;
+      color: #38bdf8;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+}
+.sample-text {
+      font-size: 20px; /* <-- Mismo tamaño idéntico para las 20 */
+      line-height: 1.4;
+      color: #ffffff;
+      margin: 0;
+}
+ .f-oswald {
+    font-family: 'Oswald', sans-serif !important;
+}
+.nosotros{
+    padding: 5px 10px 0px 10px;
+
+}
+h1.nosotros {
+    text-align: center;
+    text-decoration: underline;
+}
+h1.novedades{
+    text-align: center;
+    text-decoration: underline;
+}
+.noticias{
+    padding: 5px 10px 0px 10px;
+
+}
+
