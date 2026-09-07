@@ -344,4 +344,12 @@ h1.novedades{
     padding: 5px 10px 0px 10px;
 
 }
+h1.formulario{
+    text-align: center;
+}
+img.img-blogs{
 
+    height: 300px;
+    width: auto;
+
+}
