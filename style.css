@@ -328,24 +328,99 @@ body.pagina-registro {
  .f-oswald {
     font-family: 'Oswald', sans-serif !important;
 }
-.nosotros{
-    padding: 5px 10px 0px 10px;
 
-}
 h1.nosotros {
     text-align: center;
     text-decoration: underline;
+}
+p.nosotros{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h2.mision{
+    text-align: center;
+}
+p.mision{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h2.elegir{
+    text-align: center;
+}
+h3.calidad{
+    text-align: center;
+}
+p.seleccion{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h3.perso{
+    text-align: center;
+}
+p.person{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h3.detalle{
+    text-align: center;
+}
+p.detalles{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
 }
 h1.novedades{
     text-align: center;
     text-decoration: underline;
 }
-.noticias{
-    padding: 5px 10px 0px 10px;
-
-}
-h1.formulario{
+h2.titulo{
     text-align: center;
+}
+p.noticia{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;    
+}
+h3.titulo{
+    text-align: center;
+}
+p.parrafo{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h4.titulo{
+    text-align: center;
+}
+h5.titulo{
+    text-align: center;
+}
+h6.titulo{
+    text-align: center;
+    font-size: large;
+}
+p.parrafos{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;   
+}
+
+h1.formulario{
+
+    text-align: center;
+
 }
 img.img-blogs{
 
@@ -353,3 +428,4 @@ img.img-blogs{
     width: auto;
 
 }
+
