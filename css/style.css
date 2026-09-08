@@ -383,4 +383,133 @@ body.pagina-registro {
     min-height: 50px;
 
     margin-bottom: 25px;
+
+}
+
+
+
+.font-row {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 0;
+      border-bottom: 1px solid #334155;
+}
+
+.badge {
+      background: #334155;
+      color: #38bdf8;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+}
+.sample-text {
+      font-size: 20px; /* <-- Mismo tamaño idéntico para las 20 */
+      line-height: 1.4;
+      color: #ffffff;
+      margin: 0;
+}
+ .f-oswald {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+h1.nosotros {
+    text-align: center;
+    text-decoration: underline;
+}
+p.nosotros{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h2.mision{
+    text-align: center;
+}
+p.mision{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h2.elegir{
+    text-align: center;
+}
+h3.calidad{
+    text-align: center;
+}
+p.seleccion{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h3.perso{
+    text-align: center;
+}
+p.person{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h3.detalle{
+    text-align: center;
+}
+p.detalles{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h1.novedades{
+    text-align: center;
+    text-decoration: underline;
+}
+h2.titulo{
+    text-align: center;
+}
+p.noticia{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;    
+}
+h3.titulo{
+    text-align: center;
+}
+p.parrafo{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+h4.titulo{
+    text-align: center;
+}
+h5.titulo{
+    text-align: center;
+}
+h6.titulo{
+    text-align: center;
+    font-size: large;
+}
+p.parrafos{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;   
+}
+
+h1.formulario{
+
+    text-align: center;
+
+}
+img.img-blogs{
+
+    height: 300px;
+    width: auto;
+
 }
