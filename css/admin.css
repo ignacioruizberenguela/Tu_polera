@@ -1,0 +1,105 @@
+
+
+.pagina-admin {
+    min-height: 100vh;
+
+    background-color: #f4f6f8;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.pagina-admin .navbar {
+    padding: 15px 0;
+}
+
+.pagina-admin .navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+.admin-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.admin-header h1 {
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #212529;
+}
+
+.admin-header p {
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+
+
+.admin-card {
+    background-color: white;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.2s;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+.admin-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+
+
+.admin-card h2 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Descripción */
+
+.admin-card p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+
+
+.pagina-admin footer {
+    margin-top: 50px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #212529;
+
+    color: white;
+}
