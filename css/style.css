@@ -1,6 +1,7 @@
-/* =========================
+
+/* =========================================================
    ESTILOS GENERALES
-========================= */
+========================================================= */
 
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -10,9 +11,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    NAVBAR
-========================= */
+========================================================= */
 
 .navbar {
     padding: 15px 0;
@@ -28,9 +29,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    HERO
-========================= */
+========================================================= */
 
 .hero {
     min-height: 500px;
@@ -73,9 +74,9 @@ body {
 }
 
 
-/* =========================
-   PRODUCTOS
-========================= */
+/* =========================================================
+   PRODUCTOS GENERALES
+========================================================= */
 
 .product-card {
     border: none;
@@ -107,9 +108,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    BOTONES GENERALES
-========================= */
+========================================================= */
 
 .btn {
     border-radius: 8px;
@@ -126,9 +127,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 footer {
     background-color: #212529;
@@ -138,8 +139,9 @@ footer {
 }
 
 
-
-
+/* =========================================================
+   PÁGINA DE REGISTRO
+========================================================= */
 
 body.pagina-registro {
     background-color: #f3f2ef;
@@ -151,7 +153,6 @@ body.pagina-registro {
     padding: 20px 0;
 }
 
-
 .pagina-registro .registro-container {
     width: 100%;
     max-width: 440px;
@@ -159,9 +160,10 @@ body.pagina-registro {
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    box-sizing: border-border-box;
-}
 
+    /* Corrección del error del CSS original */
+    box-sizing: border-box;
+}
 
 .pagina-registro h2 {
     text-align: left;
@@ -179,12 +181,10 @@ body.pagina-registro {
     margin-bottom: 1.5rem;
 }
 
-
 .pagina-registro form {
     display: flex;
     flex-direction: column;
 }
-
 
 .pagina-registro label {
     display: block;
@@ -194,7 +194,6 @@ body.pagina-registro {
     margin-top: 0.85rem;
     margin-bottom: 0.25rem;
 }
-
 
 .pagina-registro input[type="text"],
 .pagina-registro input[type="email"],
@@ -210,14 +209,12 @@ body.pagina-registro {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-
 .pagina-registro input:focus,
 .pagina-registro select:focus {
     outline: none;
     border-color: #000000;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
-
 
 .pagina-registro .terminos {
     display: flex;
@@ -237,7 +234,9 @@ body.pagina-registro {
     cursor: pointer;
 }
 
+
 /* Botón Registrarse */
+
 .pagina-registro .btn-registrar {
     width: 100%;
     padding: 0.75rem;
@@ -261,6 +260,8 @@ body.pagina-registro {
 }
 
 
+/* Enlace a iniciar sesión */
+
 .pagina-registro .iniciar-sesion {
     text-align: center;
     margin-top: 1.5rem;
@@ -279,28 +280,9 @@ body.pagina-registro {
 }
 
 
-
-
-@media (max-width: 576px) {
-    .pagina-registro .registro-container {
-        padding: 1.75rem 1.25rem;
-        border-radius: 12px;
-        box-shadow: none;
-        background-color: transparent;
-    }
-
-    body.pagina-registro {
-        background-color: #ffffff;
-        align-items: flex-start;
-    }
-
-    .pagina-registro h2 {
-        font-size: 24px;
-    }
-}
-/* =========================
+/* =========================================================
    PÁGINA DE USUARIO
-========================= */
+========================================================= */
 
 .pagina-usuario {
     min-height: 100vh;
@@ -308,9 +290,7 @@ body.pagina-registro {
 }
 
 
-/* =========================
-   BIENVENIDA
-========================= */
+/* Bienvenida */
 
 .usuario-bienvenida {
     text-align: center;
@@ -328,31 +308,20 @@ body.pagina-registro {
 }
 
 
-/* =========================
-   TARJETAS
-========================= */
+/* Tarjetas */
 
 .usuario-card {
     height: 100%;
-
     padding: 35px;
-
     background-color: white;
-
     text-align: center;
-
     border-radius: 15px;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
-
-    transition: transform 0.2s,
-                box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-
 
 .usuario-card:hover {
     transform: translateY(-5px);
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -361,7 +330,6 @@ body.pagina-registro {
 
 .usuario-icon {
     font-size: 50px;
-
     margin-bottom: 15px;
 }
 
@@ -370,146 +338,370 @@ body.pagina-registro {
 
 .usuario-card h2 {
     font-size: 24px;
-
     margin-bottom: 15px;
 }
 
 
-
+/* Texto */
 
 .usuario-card p {
     color: #666;
-
     min-height: 50px;
-
     margin-bottom: 25px;
-
 }
 
 
+/* =========================================================
+   FUENTES / OTROS ELEMENTOS
+========================================================= */
 
 .font-row {
-      display: flex;
-      flex-direction: column;
-      padding: 16px 0;
-      border-bottom: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    border-bottom: 1px solid #334155;
 }
 
 .badge {
-      background: #334155;
-      color: #38bdf8;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+    background: #334155;
+    color: #38bdf8;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
+
 .sample-text {
-      font-size: 20px; /* <-- Mismo tamaño idéntico para las 20 */
-      line-height: 1.4;
-      color: #ffffff;
-      margin: 0;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0;
 }
- .f-oswald {
+
+.f-oswald {
     font-family: 'Oswald', sans-serif !important;
 }
+
+
+/* =========================================================
+   PÁGINA NOSOTROS
+========================================================= */
 
 h1.nosotros {
     text-align: center;
     text-decoration: underline;
 }
-p.nosotros{
+
+p.nosotros {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
 }
-h2.mision{
+
+h2.mision {
     text-align: center;
 }
-p.mision{
+
+p.mision {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
 }
-h2.elegir{
+
+h2.elegir {
     text-align: center;
 }
-h3.calidad{
+
+h3.calidad {
     text-align: center;
 }
-p.seleccion{
+
+p.seleccion {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
 }
-h3.perso{
+
+h3.perso {
     text-align: center;
 }
-p.person{
+
+p.person {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
 }
-h3.detalle{
+
+h3.detalle {
     text-align: center;
 }
-p.detalles{
+
+p.detalles {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
 }
-h1.novedades{
+
+
+/* =========================================================
+   PÁGINA DE BLOGS / NOTICIAS
+========================================================= */
+
+h1.novedades {
     text-align: center;
     text-decoration: underline;
 }
-h2.titulo{
+
+h2.titulo {
     text-align: center;
 }
-p.noticia{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;    
-}
-h3.titulo{
-    text-align: center;
-}
-p.parrafo{
+
+p.noticia {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
 }
-h4.titulo{
+
+h3.titulo {
     text-align: center;
 }
-h5.titulo{
+
+p.parrafo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: center;
 }
-h6.titulo{
+
+h4.titulo {
+    text-align: center;
+}
+
+h5.titulo {
+    text-align: center;
+}
+
+h6.titulo {
     text-align: center;
     font-size: large;
 }
-p.parrafos{
+
+p.parrafos {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    text-align: center;   
-}
-
-h1.formulario{
-
     text-align: center;
-
 }
-img.img-blogs{
 
+h1.formulario {
+    text-align: center;
+}
+
+img.img-blogs {
     height: 300px;
     width: auto;
-
 }
+
+
+/* =========================================================
+   TARJETAS DE PRODUCTOS
+========================================================= */
+
+.producto {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background-color: white;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Imagen de la tarjeta */
+
+.producto .card-img-top {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    padding: 15px;
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+
+/* Contenido */
+
+.producto .card-body {
+    padding: 20px;
+}
+
+.producto .card-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.producto .card-text {
+    color: #666;
+    min-height: 48px;
+}
+
+
+/* Precio */
+
+.producto .precio {
+    margin-top: 10px;
+}
+
+.producto .precio p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+
+/* Mantiene una altura uniforme para el precio */
+
+.producto .precio {
+    height: 40px;
+}
+
+
+/* Botón */
+
+.producto .btn-ver-producto {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.producto .btn-ver-producto:hover {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   MODAL DEL PRODUCTO
+========================================================= */
+
+#modalProducto .modal-dialog {
+    max-width: 850px;
+}
+
+#modalProducto .modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* Contenedor de imagen */
+
+#modalProducto .modal-imagen-contenedor {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Imagen */
+
+#modalProducto #modalImagen {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+}
+
+
+/* Título */
+
+#modalProducto .modal-title {
+    font-weight: 600;
+}
+
+
+/* Botón */
+
+#modalProducto #btnAgregarCarrito {
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+
+/* =========================================================
+   DESCUENTOS
+========================================================= */
+
+.descuento {
+    font-size: 1.50em;
+    color: darkgreen;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .producto .card-img-top {
+        height: 240px;
+    }
+
+    #modalProducto .modal-dialog {
+        margin: 10px;
+    }
+
+    #modalProducto .modal-imagen-contenedor {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .pagina-registro .registro-container {
+        padding: 1.75rem 1.25rem;
+        border-radius: 12px;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    body.pagina-registro {
+        background-color: #ffffff;
+        align-items: flex-start;
+    }
+
+    .pagina-registro h2 {
+        font-size: 24px;
+    }
+
+    .producto .card-img-top {
+        height: 220px;
+    }
+
+    #modalProducto .modal-imagen-contenedor {
+        height: 250px;
+    }
+}
+

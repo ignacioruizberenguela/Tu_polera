@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ver producto - Tu Polera</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body class="pagina-admin">
+
+<div class="container-fluid">
+    <div class="row min-vh-100">
+
+        <!-- SIDEBAR -->
+        <div class="col-md-3 col-lg-2 bg-dark text-white p-0">
+
+            <div class="p-4">
+                <h3>Tu Polera</h3>
+                <p class="text-secondary">
+                    PANEL DE ADMINISTRACIÓN
+                </p>
+            </div>
+
+            <div class="list-group list-group-flush">
+
+                <a href="admin_index.html"
+                   class="list-group-item list-group-item-action bg-dark text-white">
+                    Inicio
+                </a>
+
+                <a href="admin_productos.html"
+                   class="list-group-item list-group-item-action bg-dark text-white">
+                    Productos
+                </a>
+
+                <a href="usuarios.html"
+                   class="list-group-item list-group-item-action bg-dark text-white">
+                    Usuarios
+                </a>
+
+            </div>
+
+            <div class="p-4 mt-auto">
+                <a href="../index.html"
+                   class="btn btn-outline-light w-100">
+                    Volver a la tienda
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- CONTENIDO -->
+        <div class="col-md-9 col-lg-10 bg-light p-4 p-md-5">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                <div>
+                    <h1>Información del producto</h1>
+                    <p class="text-muted">
+                        Datos del producto seleccionado
+                    </p>
+                </div>
+
+                <a href="admin_productos.html"
+                   class="btn btn-secondary">
+                    Volver
+                </a>
+
+            </div>
+
+
+            <!-- INFORMACIÓN DEL PRODUCTO -->
+            <div class="card shadow-sm">
+
+                <div class="card-body">
+
+                    <div class="row">
+
+                        <!-- IMAGEN -->
+                        <div class="col-md-5 text-center">
+
+                            <img
+                                id="imagenProducto"
+                                src=""
+                                class="img-fluid"
+                                style="max-height: 400px;"
+                                alt="Producto">
+
+                        </div>
+
+
+                        <!-- DATOS -->
+                        <div class="col-md-7">
+
+                            <h2 id="nombreProducto">
+                                Producto
+                            </h2>
+                        
+                            <hr>
+                        
+                            <p>
+                                <strong>ID:</strong>
+                                <span id="idProducto"></span>
+                            </p>
+                        
+                            <p>
+                                <strong>Categoría:</strong>
+                                <span id="categoriaProducto"></span>
+                            </p>
+                        
+                            <p>
+                                <strong>Precio:</strong>
+                                $<span id="precioProducto"></span>
+                            </p>
+                        
+                            <p>
+                                <strong>Color:</strong>
+                                <span id="colorProducto"></span>
+                            </p>
+                        
+                            <p>
+                                <strong>Descuento:</strong>
+                                <span id="descuentoProducto"></span>%
+                            </p>
+                        
+                            <p>
+                                <strong>Tallas:</strong>
+                                <span id="tallasProducto"></span>
+                            </p>
+                        
+                            <!-- Solo aparece en poleras -->
+                            <p id="campoMangaCorta" style="display: none;">
+                                <strong>Manga corta:</strong>
+                                <span id="mangaCortaProducto"></span>
+                            </p>
+                        
+                            <!-- Solo aparece en polerones -->
+                            <p id="campoCapucha" style="display: none;">
+                                <strong>Capucha:</strong>
+                                <span id="capuchaProducto"></span>
+                            </p>
+                        
+                            <!-- Solo aparece en gorras -->
+                            <p id="campoTipoGorro" style="display: none;">
+                                <strong>Tipo de gorro:</strong>
+                                <span id="tipoGorroProducto"></span>
+                            </p>
+                        
+                            <p>
+                                <strong>Descripción:</strong>
+                            </p>
+                        
+                            <p id="descripcionProducto">
+                            </p>
+                        
+                            <hr>
+                        
+                            <a
+                                id="btnEditar"
+                                href="#"
+                                class="btn btn-primary">
+                                Editar producto
+                            </a>
+
+                            <button
+                                id="btnEliminar"
+                                type="button"
+                                class="btn btn-danger ms-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalEliminar">
+                                Eliminar producto
+                            </button>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal eliminar producto -->
+<div
+    class="modal fade"
+    id="modalEliminar"
+    tabindex="-1"
+    aria-labelledby="modalEliminarLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5
+                    class="modal-title"
+                    id="modalEliminarLabel">
+                    Eliminar producto
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar">
+                </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+                <img
+                    src="../Imagenes/Placeholder.png"
+                    alt="Eliminar producto"
+                    class="img-fluid mb-3"
+                    style="max-width: 180px;">
+
+                <p>
+                    ¿Estás seguro de que quieres eliminar este producto?
+                </p>
+
+                <strong id="nombreProductoEliminar"></strong>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cancelar
+                </button>
+
+                <button
+                    type="button"
+                    id="confirmarEliminar"
+                    class="btn btn-danger">
+                    Eliminar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/ver_productos.js"></script>
+
+</body>
+</html>
