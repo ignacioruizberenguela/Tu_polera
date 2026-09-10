@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ver usuario - Tu Polera</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+
+<body class="pagina-admin">
+
+<div class="container-fluid">
+
+    <div class="row min-vh-100">
+
+
+        <!-- BARRA LATERAL -->
+
+        <aside class="col-md-3 col-lg-2 bg-dark text-white p-0">
+
+            <div class="p-4">
+
+                <h4 class="mb-4">
+                    Tu Polera
+                </h4>
+
+                <p class="text-secondary small">
+                    PANEL DE ADMINISTRACIÓN
+                </p>
+
+                <hr>
+
+                <nav class="nav flex-column">
+
+                    <a href="admin_index.html"
+                       class="nav-link text-white mb-2">
+
+                        Inicio
+
+                    </a>
+
+
+                    <a href="admin_productos.html"
+                       class="nav-link text-white mb-2">
+
+                        Productos
+
+                    </a>
+
+
+                    <a href="admin_usuarios.html"
+                       class="nav-link active text-white mb-2">
+
+                        Usuarios
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="position-absolute bottom-0 p-4">
+
+                <a href="../index.html"
+                   class="btn btn-outline-light">
+
+                    Volver a la tienda
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <main class="col-md-9 col-lg-10 bg-light p-4 p-md-5">
+
+
+            <!-- ENCABEZADO -->
+
+            <div class="d-flex justify-content-between
+                        align-items-center mb-4">
+
+                <div>
+
+                    <h1 class="fw-bold">
+
+                        Información del usuario
+
+                    </h1>
+
+                    <p class="text-muted mb-0">
+
+                        Datos del usuario seleccionado.
+
+                    </p>
+
+                </div>
+
+
+                <a href="admin_usuarios.html"
+                   class="btn btn-secondary">
+
+                    Volver
+
+                </a>
+
+            </div>
+
+
+
+            <!-- INFORMACIÓN DEL USUARIO -->
+
+            <div class="card shadow-sm">
+
+                <div class="card-body">
+
+                    <h2 id="nombreUsuario">
+                        Usuario
+                    </h2>
+
+                    <hr>
+
+
+                    <p>
+
+                        <strong>ID:</strong>
+
+                        <span id="idUsuario"></span>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>Nombre:</strong>
+
+                        <span id="usuarioNombre"></span>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>Correo:</strong>
+
+                        <span id="usuarioCorreo"></span>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>RUT:</strong>
+
+                        <span id="usuarioRut"></span>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>Región:</strong>
+
+                        <span id="usuarioRegion"></span>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>Comuna:</strong>
+
+                        <span id="usuarioComuna"></span>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>Rol:</strong>
+
+                        <span id="usuarioRol"></span>
+
+                    </p>
+
+
+                    <hr>
+
+
+                    <!-- BOTONES -->
+
+                    <a
+                        id="btnEditar"
+                        href="#"
+                        class="btn btn-primary">
+
+                        Editar usuario
+
+                    </a>
+
+
+                    <button
+                        id="btnEliminar"
+                        type="button"
+                        class="btn btn-danger ms-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalEliminar">
+
+                        Eliminar usuario
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- MODAL ELIMINAR USUARIO -->
+
+<div
+    class="modal fade"
+    id="modalEliminar"
+    tabindex="-1"
+    aria-labelledby="modalEliminarLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+
+                <h5
+                    class="modal-title"
+                    id="modalEliminarLabel">
+
+                    Eliminar usuario
+
+                </h5>
+
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar">
+
+                </button>
+
+            </div>
+
+
+
+            <div class="modal-body text-center">
+
+                <p>
+
+                    ¿Estás seguro de que quieres
+                    eliminar este usuario?
+
+                </p>
+
+
+                <strong id="nombreUsuarioEliminar"></strong>
+
+            </div>
+
+
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="confirmarEliminar"
+                    class="btn btn-danger">
+
+                    Eliminar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="js/admin_ver_usuario.js"></script>
+
+</body>
+
+</html>

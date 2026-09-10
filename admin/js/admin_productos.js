@@ -12,85 +12,84 @@ productos = [
 
     {
         id: 1,
-        nombre: "Polera personalizada",
+        nombre: "Urban Red",
         categoria: "poleras",
         precio: 12990,
-        color: "negro",
+        color: "rojo",
         descuento: 50,
         tallas: ["S", "M", "L", "XL"],
         manga_corta: "si",
-        descripcion: "Diseña tu propia polera personalizada.",
+        descripcion: "Polera liviana y cómoda, ideal para un estilo casual y urbano.",
         imagen: "../Imagenes/imagen1.png"
     },
 
     {
         id: 2,
-        nombre: "Polerón personalizado",
-        categoria: "polerones",
-        precio: 24990,
+        nombre: "Black Street",
+        categoria: "poleras",
+        precio: 14990,
         color: "negro",
-        descuento: 5,
+        descuento: 10,
         tallas: ["S", "M", "L", "XL"],
-        capucha: "si",
-        descripcion: "Diseña tu propio polerón personalizado.",
+        manga_corta: "no",
+        descripcion: "Diseño de manga larga pensado para complementar outfits modernos.",
         imagen: "../Imagenes/imagen2.png"
     },
 
     {
         id: 3,
-        nombre: "Gorra personalizada",
-        categoria: "gorras",
-        precio: 8990,
-        color: "negro",
-        descuento: 50,
-        tallas: ["Única"],
-        tipo_gorro: "Snapback",
-        descripcion: "Diseña tu propia gorra personalizada.",
-        imagen: "../Imagenes/imagen3.png"
-    },
-
-    {
-        id: 4,
-        nombre: "Gorra personalizada",
-        categoria: "gorras",
-        precio: 8990,
-        color: "negro",
-        descuento: 15,
-        tallas: ["Única"],
-        tipo_gorro: "Snapback",
-        descripcion: "Diseña tu propia gorra personalizada.",
-        imagen: "../Imagenes/imagen3.png"
-    },
-
-    {
-        id: 5,
-        nombre: "Polerón personalizado",
+        nombre: "Black Hoodie",
         categoria: "polerones",
         precio: 24990,
         color: "negro",
         descuento: 25,
         tallas: ["S", "M", "L", "XL"],
         capucha: "si",
-        descripcion: "Diseña tu propio polerón personalizado.",
-        imagen: "../Imagenes/imagen2.png"
+        descripcion: "Prenda abrigadora y versátil para disfrutar los días más fríos.",
+        imagen: "../Imagenes/imagen3.png"
+    },
+
+    {
+        id: 4,
+        nombre: "Red Classic",
+        categoria: "polerones",
+        precio: 22990,
+        color: "rojo",
+        descuento: 15,
+        tallas: ["S", "M", "L", "XL"],
+        capucha: "no",
+        descripcion: "Estilo sencillo y cómodo que combina fácilmente con distintos looks.",
+        imagen: "../Imagenes/imagen4.png"
+    },
+
+    {
+        id: 5,
+        nombre: "Yellow Trucker",
+        categoria: "gorras",
+        precio: 8990,
+        color: "amarillo",
+        descuento: 20,
+        tallas: ["Única"],
+        tipo_gorro: "Trucker",
+        descripcion: "Gorra fresca y llamativa, perfecta para complementar un look casual.",
+        imagen: "../Imagenes/imagen5.png"
     },
 
     {
         id: 6,
-        nombre: "Polera personalizada",
-        categoria: "poleras",
-        precio: 12990,
+        nombre: "Black Jockey",
+        categoria: "gorras",
+        precio: 8990,
         color: "negro",
-        descuento: 50,
-        tallas: ["S", "M", "L", "XL"],
-        manga_corta: "si",
-        descripcion: "Diseña tu propia polera personalizada.",
-        imagen: "../Imagenes/imagen1.png"
+        descuento: 10,
+        tallas: ["Única"],
+        tipo_gorro: "Jockey",
+        descripcion: "Diseño clásico y versátil para usar en cualquier ocasión.",
+        imagen: "../Imagenes/imagen6.png"
     }
 
-
-
 ];
+
 
 localStorage.setItem(
     "productos",

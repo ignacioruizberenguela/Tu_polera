@@ -11,12 +11,10 @@
 
     <title>Mi cuenta</title>
 
-    
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
         rel="stylesheet">
 
-    
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -24,8 +22,6 @@
 
 <body class="pagina-usuario">
 
-
-    
 
     <nav class="navbar navbar-dark bg-dark">
 
@@ -42,9 +38,14 @@
 
             <div class="d-flex align-items-center gap-3">
 
-                <span class="text-white">
+                <span 
+                    class="text-white"
+                    id="saludoUsuario">
+
                     Hola, usuario
+
                 </span>
+
 
                 <a 
                     href="carrito.html" 
@@ -54,9 +55,11 @@
 
                 </a>
 
+
                 <a 
                     href="index.html" 
-                    class="btn btn-outline-light">
+                    class="btn btn-outline-light"
+                    id="cerrarSesion">
 
                     Cerrar sesión
 
@@ -70,12 +73,8 @@
 
 
 
-    
-
     <main class="container py-5">
 
-
-        <!-- BIENVENIDA -->
 
         <section class="usuario-bienvenida">
 
@@ -92,34 +91,33 @@
 
 
 
-        
-
-        <div class="row g-4 mt-4">
+        <div class="row g-4 mt-4 justify-content-center">
 
 
-            <!-- PERFIL -->
-
-            <div class="col-12 col-md-4">
+            <div 
+                class="col-12 col-md-4" 
+                id="opcionAdmin"
+                style="display: none;">
 
                 <div class="usuario-card">
 
                     <div class="usuario-icon">
-                        👤
+                        ⚙️
                     </div>
 
                     <h2>
-                        Mi perfil
+                        Administración
                     </h2>
 
                     <p>
-                        Consulta y modifica tus datos personales.
+                        Administra los productos y usuarios de la tienda.
                     </p>
 
                     <a 
-                        href="#" 
+                        href="admin/admin_index.html" 
                         class="btn btn-primary">
 
-                        Ver perfil
+                        Panel de administración
 
                     </a>
 
@@ -128,8 +126,6 @@
             </div>
 
 
-
-            
 
             <div class="col-12 col-md-4">
 
@@ -160,8 +156,6 @@
             </div>
 
 
-
-            
 
             <div class="col-12 col-md-4">
 
@@ -198,20 +192,134 @@
 
 
 
+    <footer class="bg-dark text-white mt-5">
     
-    <footer>
+        <div class="container py-5">
+        
+            <div class="row g-4">
+            
+            
+                <div class="col-md-4">
+                
+                    <h4>
+                        Tu Polera
+                    </h4>
+                
+                    <p class="text-secondary">
+                        Diseña y personaliza tus prendas
+                        para crear un estilo único.
+                    </p>
+                
+                </div>
+            
+            
+                <div class="col-md-4">
+                
+                    <h5>
+                        Navegación
+                    </h5>
+                
+                    <ul class="list-unstyled">
+                    
+                        <li class="mb-2">
+                            <a
+                                href="index.html"
+                                class="text-secondary text-decoration-none">
+                        
+                                Inicio
+                        
+                            </a>
+                        </li>
+                    
+                        <li class="mb-2">
+                            <a
+                                href="productos.html"
+                                class="text-secondary text-decoration-none">
+                        
+                                Productos
+                        
+                            </a>
+                        </li>
+                    
+                        <li class="mb-2">
+                            <a
+                                href="nosotros.html"
+                                class="text-secondary text-decoration-none">
+                        
+                                Nosotros
+                        
+                            </a>
+                        </li>
+                    
+                        <li class="mb-2">
+                            <a
+                                href="contacto.html"
+                                class="text-secondary text-decoration-none">
+                        
+                                Contacto
+                        
+                            </a>
+                        </li>
+                    
+                    </ul>
+                
+                </div>
+            
+            
+                <div class="col-md-4">
+                
+                    <h5>
+                        Tu cuenta
+                    </h5>
+                
+                    <ul class="list-unstyled">
+                    
+                        <li class="mb-2">
+                            <a
+                                href="registro.html"
+                                class="text-secondary text-decoration-none">
+                        
+                                Registrarse
+                        
+                            </a>
+                        </li>
+                    
+                        <li class="mb-2">
+                            <a
+                                href="carrito.html"
+                                class="text-secondary text-decoration-none">
+                        
+                                Mi carrito
+                        
+                            </a>
+                        </li>
+                    
+                    </ul>
+                
+                </div>
+            
+            </div>
+        
+        
+            <hr class="border-secondary my-4">
+        
+        
+            <div class="text-center text-secondary">
+            
+                <p class="mb-0">
+                    © 2026 Tu Polera - Todos los derechos reservados
+                </p>
 
-        <div class="container text-center">
-
-            <p class="mb-0">
-                Tu Polera
-            </p>
-
+            </div>
+        
         </div>
-
+    
     </footer>
+    
 
+    <script src="js/usuario.js"></script>
 
 </body>
 
 </html>
+
