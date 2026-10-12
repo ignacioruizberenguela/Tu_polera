@@ -2,324 +2,208 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta 
-        name="viewport" 
-        content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi cuenta</title>
 
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-        rel="stylesheet">
+    <!-- Fuente de la plantilla Male Fashion -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/elegant-icons.css">
+
+    <!-- CSS propio (tema Male Fashion) -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body class="pagina-usuario">
 
-
-    <nav class="navbar navbar-dark bg-dark">
-
-        <div class="container">
-
-            <a 
-                class="navbar-brand" 
-                href="usuario.html">
-
-                Tu Tienda
-
-            </a>
-
-
-            <div class="d-flex align-items-center gap-3">
-
-                <span 
-                    class="text-white"
-                    id="saludoUsuario">
-
-                    Hola, usuario
-
-                </span>
-
-
-                <a 
-                    href="carrito.html" 
-                    class="btn btn-outline-light">
-
-                    🛒 Carrito
-
-                </a>
-
-
-                <a 
-                    href="index.html" 
-                    class="btn btn-outline-light"
-                    id="cerrarSesion">
-
-                    Cerrar sesión
-
-                </a>
-
+    <!-- Menú móvil -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="carrito.html">Carrito</a>
+                <a href="index.html" class="cerrar-sesion-movil" id="cerrarSesionMovil">Cerrar sesión</a>
             </div>
-
         </div>
+        <div class="offcanvas__nav__option">
+            <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+        </div>
+        <nav class="offcanvas__list">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__text">
+            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+        </div>
+    </div>
 
-    </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p id="saludoUsuario">Hola, usuario</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="carrito.html">Carrito</a>
+                                <a href="index.html" id="cerrarSesion">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="usuario.html" class="logo-text">Tu <span>Polera</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open" role="button" aria-label="Abrir menú"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
 
+    <!-- Cabecera de página -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h1>Mi cuenta</h1>
+                        <div class="breadcrumb__links">
+                            <a href="index.html">Inicio</a>
+                            <span>Mi cuenta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
+    <!-- Mi cuenta -->
     <main class="container py-5">
-
-
-        <section class="usuario-bienvenida">
-
-            <h1>
-                ¡Bienvenido a tu cuenta!
-            </h1>
-
+        <section class="usuario-bienvenida spad pb-0">
+            <h1>¡Bienvenido a tu cuenta!</h1>
             <p>
                 Desde aquí puedes administrar tu cuenta
                 y comprar nuestros productos.
             </p>
-
         </section>
 
+        <div class="row g-4 mt-4 justify-content-center pb-5">
 
-
-        <div class="row g-4 mt-4 justify-content-center">
-
-
-            <div 
-                class="col-12 col-md-4" 
-                id="opcionAdmin"
-                style="display: none;">
-
-                <div class="usuario-card">
-
-                    <div class="usuario-icon">
-                        ⚙️
+                <div class="col-12 col-md-4" id="opcionAdmin" style="display: none;">
+                    <div class="usuario-card">
+                        <div class="usuario-icon"><i class="fa fa-cog"></i></div>
+                        <h2>Administración</h2>
+                        <p>Administra los productos y usuarios de la tienda.</p>
+                        <a href="admin/admin_index.html" class="primary-btn">Panel de administración</a>
                     </div>
-
-                    <h2>
-                        Administración
-                    </h2>
-
-                    <p>
-                        Administra los productos y usuarios de la tienda.
-                    </p>
-
-                    <a 
-                        href="admin/admin_index.html" 
-                        class="btn btn-primary">
-
-                        Panel de administración
-
-                    </a>
-
                 </div>
 
-            </div>
 
-
-
-            <div class="col-12 col-md-4">
-
-                <div class="usuario-card">
-
-                    <div class="usuario-icon">
-                        🛍️
+                <div class="col-12 col-md-4">
+                    <div class="usuario-card">
+                        <div class="usuario-icon"><i class="fa fa-shopping-bag"></i></div>
+                        <h2>Productos</h2>
+                        <p>Explora todos los productos disponibles.</p>
+                        <a href="productos.html" class="primary-btn">Ver productos</a>
                     </div>
-
-                    <h2>
-                        Productos
-                    </h2>
-
-                    <p>
-                        Explora todos los productos disponibles.
-                    </p>
-
-                    <a 
-                        href="productos.html" 
-                        class="btn btn-primary">
-
-                        Ver productos
-
-                    </a>
-
                 </div>
 
-            </div>
 
-
-
-            <div class="col-12 col-md-4">
-
-                <div class="usuario-card">
-
-                    <div class="usuario-icon">
-                        🛒
+                <div class="col-12 col-md-4">
+                    <div class="usuario-card">
+                        <div class="usuario-icon"><i class="fa fa-shopping-cart"></i></div>
+                        <h2>Mi carrito</h2>
+                        <p>Revisa los productos que has agregado.</p>
+                        <a href="carrito.html" class="primary-btn">Ver carrito</a>
                     </div>
-
-                    <h2>
-                        Mi carrito
-                    </h2>
-
-                    <p>
-                        Revisa los productos que has agregado.
-                    </p>
-
-                    <a 
-                        href="carrito.html" 
-                        class="btn btn-primary">
-
-                        Ver carrito
-
-                    </a>
-
                 </div>
-
-            </div>
-
 
         </div>
-
     </main>
 
-
-
-    <footer class="bg-dark text-white mt-5">
-    
-        <div class="container py-5">
-        
-            <div class="row g-4">
-            
-            
-                <div class="col-md-4">
-                
-                    <h4>
-                        Tu Polera
-                    </h4>
-                
-                    <p class="text-secondary">
-                        Diseña y personaliza tus prendas
-                        para crear un estilo único.
-                    </p>
-                
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                        </div>
+                        <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                    </div>
                 </div>
-            
-            
-                <div class="col-md-4">
-                
-                    <h5>
-                        Navegación
-                    </h5>
-                
-                    <ul class="list-unstyled">
-                    
-                        <li class="mb-2">
-                            <a
-                                href="index.html"
-                                class="text-secondary text-decoration-none">
-                        
-                                Inicio
-                        
-                            </a>
-                        </li>
-                    
-                        <li class="mb-2">
-                            <a
-                                href="productos.html"
-                                class="text-secondary text-decoration-none">
-                        
-                                Productos
-                        
-                            </a>
-                        </li>
-                    
-                        <li class="mb-2">
-                            <a
-                                href="nosotros.html"
-                                class="text-secondary text-decoration-none">
-                        
-                                Nosotros
-                        
-                            </a>
-                        </li>
-                    
-                        <li class="mb-2">
-                            <a
-                                href="contacto.html"
-                                class="text-secondary text-decoration-none">
-                        
-                                Contacto
-                        
-                            </a>
-                        </li>
-                    
-                    </ul>
-                
+                <div class="col-lg-3 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Navegación</h6>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
-            
-            
-                <div class="col-md-4">
-                
-                    <h5>
-                        Tu cuenta
-                    </h5>
-                
-                    <ul class="list-unstyled">
-                    
-                        <li class="mb-2">
-                            <a
-                                href="registro.html"
-                                class="text-secondary text-decoration-none">
-                        
-                                Registrarse
-                        
-                            </a>
-                        </li>
-                    
-                        <li class="mb-2">
-                            <a
-                                href="carrito.html"
-                                class="text-secondary text-decoration-none">
-                        
-                                Mi carrito
-                        
-                            </a>
-                        </li>
-                    
-                    </ul>
-                
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Tu cuenta</h6>
+                        <ul>
+                            <li><a href="registro.html">Registrarse</a></li>
+                            <li><a href="carrito.html">Mi carrito</a></li>
+                        </ul>
+                    </div>
                 </div>
-            
             </div>
-        
-        
-            <hr class="border-secondary my-4">
-        
-        
-            <div class="text-center text-secondary">
-            
-                <p class="mb-0">
-                    © 2026 Tu Polera - Todos los derechos reservados
-                </p>
-
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <p>© 2026 Tu Polera - Todos los derechos reservados</p>
+                        <p class="credito">Diseño basado en la plantilla Male Fashion de <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a></p>
+                    </div>
+                </div>
             </div>
-        
         </div>
-    
     </footer>
-    
 
     <script src="js/usuario.js"></script>
-
+    <script src="js/tema.js"></script>
 </body>
 
 </html>
-

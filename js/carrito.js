@@ -24,26 +24,24 @@ function mostrarCarrito() {
     if (carrito.length === 0) {
 
         contenedorCarrito.innerHTML = `
-            <div class="card">
-                <div class="card-body text-center">
+            <div class="cart-vacio">
 
-                    <h5>
-                        Tu carrito está vacío
-                    </h5>
+                <h5>
+                    Tu carrito está vacío
+                </h5>
 
-                    <p class="text-muted">
-                        Agrega productos para comenzar tu compra.
-                    </p>
+                <p>
+                    Agrega productos para comenzar tu compra.
+                </p>
 
-                    <a
-                        href="productos.html"
-                        class="btn btn-dark">
+                <a
+                    href="productos.html"
+                    class="primary-btn">
 
-                        Ver productos
+                    Ver productos
 
-                    </a>
+                </a>
 
-                </div>
             </div>
         `;
 
@@ -113,92 +111,83 @@ function mostrarCarrito() {
             document.createElement("div");
 
         tarjeta.className =
-            "card mb-3";
+            "cart-row";
 
 
         tarjeta.innerHTML = `
 
-            <div class="card-body">
+            <div class="product__cart__item">
 
-                <div class="row align-items-center">
+                <div class="product__cart__item__pic">
 
-                    <!-- IMAGEN -->
-
-                    <div class="col-md-3 text-center">
-
-                        <img
-                            src="${producto.imagen}"
-                            alt="${producto.nombre}"
-                            class="img-fluid"
-                            style="max-height: 150px;">
-
-                    </div>
-
-
-                    <!-- INFORMACIÓN -->
-
-                    <div class="col-md-9">
-
-                        <h5>
-                            ${producto.nombre}
-                        </h5>
-
-
-                        <p>
-                            <strong>
-                                Talla:
-                            </strong>
-
-                            ${producto.talla || "Única"}
-
-                        </p>
-
-
-                        ${informacionPrecio}
-
-
-                        <div>
-
-                            <span>
-                                Cantidad:
-                            </span>
-
-
-                            <button
-                                class="btn btn-sm btn-secondary btn-restar">
-
-                                −
-
-                            </button>
-
-
-                            <span class="mx-2 cantidad">
-
-                                ${producto.cantidad}
-
-                            </span>
-
-
-                            <button
-                                class="btn btn-sm btn-secondary btn-sumar">
-
-                                +
-
-                            </button>
-
-
-                            <button
-                                class="btn btn-sm btn-danger btn-eliminar ms-3">
-
-                                Eliminar
-
-                            </button>
-
-                        </div>
-
-                    </div>
+                    <img
+                        src="${producto.imagen}"
+                        alt="${producto.nombre}">
 
                 </div>
+
+                <div class="product__cart__item__text">
+
+                    <h6>
+                        ${producto.nombre}
+                    </h6>
+
+                    <p>
+                        <strong>
+                            Talla:
+                        </strong>
+
+                        ${producto.talla || "Única"}
+                    </p>
+
+                    ${informacionPrecio}
+
+                </div>
+
+            </div>
+
+
+            <div class="quantity__item">
+
+                <div class="quantity-box">
+
+                    <button
+                        type="button"
+                        class="btn-restar"
+                        aria-label="Restar una unidad">
+
+                        −
+
+                    </button>
+
+                    <span class="cantidad">
+                        ${producto.cantidad}
+                    </span>
+
+                    <button
+                        type="button"
+                        class="btn-sumar"
+                        aria-label="Sumar una unidad">
+
+                        +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="cart__close">
+
+                <button
+                    type="button"
+                    class="btn-eliminar"
+                    aria-label="Eliminar producto">
+
+                    <i class="fa fa-close"></i>
+
+                </button>
 
             </div>
 

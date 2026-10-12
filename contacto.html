@@ -1,97 +1,217 @@
-<!<DOCTYPE HTML>
-<HTML LANG="ES">
-    <HEAD>
-        <meta charset ="utf-8">
-        <title> contacto - tu polera</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </HEAD>
+<!DOCTYPE html>
+<html lang="es">
 
-    <body>
-            <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tu Polera</title>
+
+    <!-- Fuente de la plantilla Male Fashion -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/elegant-icons.css">
+
+    <!-- CSS propio (tema Male Fashion) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Menú móvil -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="registro.html" class="boton-cuenta">Registro</a>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+        </div>
+        <nav class="offcanvas__list">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li class="active"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__text">
+            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
             <div class="container">
-                
-                
-                <a class="navbar-brand text-white" href="index.html">
-                    Tu polera
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">🏠Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">Blogs</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-
-                    <!-- Carrito -->
-                    <a
-                        href="carrito.html"
-                        class="btn btn-outline-light ms-3">
-                        🛒 Carrito
-
-                    </a>
-
-                    <a
-                        href="registro.html"
-                        id="botonCuenta"
-                        class="btn btn-outline-light ms-2">
-                        Registro
-
-                    </a>
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="registro.html" id="botonCuenta" class="boton-cuenta">Registro</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li class="active"><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open" role="button" aria-label="Abrir menú"><i class="fa fa-bars"></i></div>
+        </div>
     </header>
-    
-    <div class=" container mt-5 formulario" >
-        <div  class="row justify-content-center">
-        <div class="col-md-6 col-lg-5 shadow p-4 rounded bg-white">
-        <h1 class="formulario"> contacto </h1>
-        <form>
-        <div class="mb-3">
-        <p1> ingresa tu nombre</p1>
-        <input type="nombre" class="form-control" id="InputNombre">
-        <p2> apellido</p2>
-        <input type="apellido" class="form-control" id="InputApellido">
-        <label for="InputEmail1" class="form-label">direccion de correo</label>
-        <input type="email" class="form-control" id="InputEmail">
-        <p3>numero telefonico</p3>
-        <input type="telefono" class="form-control" id="InputTelefono">
-        <p4> en que te podemos ayudar</p4>
 
-        <textarea class="form-control" id="area texto" rows="3">
+    <!-- Cabecera de página -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h1>Contacto</h1>
+                        <div class="breadcrumb__links">
+                            <a href="index.html">Inicio</a>
+                            <span>Contacto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </textarea>
-        
+    <!-- Contacto -->
+    <main>
+        <section class="contact spad">
+            <div class="container">
+                <div class="contact__box">
+                    <div class="section-title">
+                        <span>Escríbenos</span>
+                        <h2>contacto</h2>
+                    </div>
+
+                    <div class="contact__form">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label for="InputNombre">ingresa tu nombre</label>
+                                    <input type="text" id="InputNombre">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label for="InputApellido">apellido</label>
+                                    <input type="text" id="InputApellido">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label for="InputEmail">direccion de correo</label>
+                                    <input type="email" id="InputEmail">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label for="InputTelefono">numero telefonico</label>
+                                    <input type="tel" id="InputTelefono">
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <label for="areaTexto">en que te podemos ayudar</label>
+                                    <textarea id="areaTexto" rows="3"></textarea>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <label for="formFile">seleciona el logo que quieres en tu polera</label>
+                                    <input type="file" id="formFile">
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <button type="submit" class="site-btn">enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                        </div>
+                        <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Navegación</h6>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Tu cuenta</h6>
+                        <ul>
+                            <li><a href="registro.html">Registrarse</a></li>
+                            <li><a href="carrito.html">Mi carrito</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <p>© 2026 Tu Polera - Todos los derechos reservados</p>
+                        <p class="credito">Diseño basado en la plantilla Male Fashion de <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-        <label for="formFile" class="form-label">seleciona el logo que quieres en tu polera</label>
-        <input class="form-control" type="file" id="formFile">
-        </div>
-        <div class="mb-3"> 
-        </div>
-        <button type="submit" class="btn btn-primary">enviar</button>
-        </form>
-    </div>
-    </div>
-    </div>
-    
+    </footer>
+
     <script src="js/cuenta.js"></script>
-    </body>
+    <script src="js/tema.js"></script>
+</body>
+
+</html>

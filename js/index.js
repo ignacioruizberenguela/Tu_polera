@@ -74,33 +74,27 @@ for (
         if (descuento === 0) {
 
             informacionPrecio = `
-                <p class="fw-bold mb-3">
-                    $${precio.toLocaleString("es-CL")}
-                </p>
+                <div class="precio">
+                    <h5>
+                        $${precio.toLocaleString("es-CL")}
+                    </h5>
+                </div>
             `;
 
         } else {
 
             informacionPrecio = `
-                <p class="mb-1">
-                    <s>
-                        $${precio.toLocaleString("es-CL")}
-                    </s>
-
-                    <span class="text-success ms-2">
-                        -${descuento}%
-                    </span>
-                </p>
-
-                <p class="fw-bold mb-3">
-                    $${precioFinal.toLocaleString("es-CL")}
-                </p>
+                <div class="precio">
+                    <h5>
+                        <s class="precio-antes">$${precio.toLocaleString("es-CL")}</s>$${precioFinal.toLocaleString("es-CL")}
+                    </h5>
+                </div>
             `;
         }
 
 
         let rutaImagen =
-            producto.imagen || "imagenes/Placeholder.png";
+            producto.imagen || "Imagenes/Placeholder.png";
 
 
         // Evitar ../ si el producto fue guardado
@@ -123,38 +117,49 @@ for (
             "col-12 col-md-4";
 
 
+        const claseSale =
+            descuento > 0 ? " sale" : "";
+
+
+        const etiqueta =
+            descuento > 0
+                ? `<span class="label">-${descuento}%</span>`
+                : "";
+
+
         columna.innerHTML = `
 
-            <div class="card producto-destacado h-100 shadow-sm">
+            <div class="product__item${claseSale}">
 
-                <img
-                    src="${rutaImagen}"
-                    class="card-img-top"
-                    alt="${producto.nombre}">
+                <div class="product__item__pic">
 
-                <div class="card-body d-flex flex-column">
+                    ${etiqueta}
 
-                    <h5 class="card-title">
+                    <img
+                        src="${rutaImagen}"
+                        alt="${producto.nombre}">
+
+                </div>
+
+                <div class="product__item__text">
+
+                    <h6>
                         ${producto.nombre}
-                    </h5>
+                    </h6>
 
-                    <p class="card-text text-muted">
+                    <a
+                        href="productos.html"
+                        class="add-cart">
+
+                        + Ver productos
+
+                    </a>
+
+                    <p class="producto-desc">
                         ${producto.descripcion || ""}
                     </p>
 
                     ${informacionPrecio}
-
-                    <div class="mt-auto">
-
-                        <a
-                            href="productos.html"
-                            class="btn btn-dark w-100">
-
-                            Ver productos
-
-                        </a>
-
-                    </div>
 
                 </div>
 

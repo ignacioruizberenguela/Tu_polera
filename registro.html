@@ -4,90 +4,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Crear Cuenta</title>
 
-    <!-- Bootstrap -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-        rel="stylesheet">
+    <!-- Fuente de la plantilla Male Fashion -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- CSS propio -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/elegant-icons.css">
+
+    <!-- CSS propio (tema Male Fashion) -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="pagina-registro">
 
-    <div class="registro-container">
-
-        <h2>Crear Cuenta</h2>
-
-        <p>Ingresa tus datos para registrarte</p>
-
-        <form>
-
-            <label for="nombre">Nombre completo</label>
-            <input 
-                type="text" 
-                id="nombre" 
-                placeholder="Juan Pérez">
-
-            <label for="correo">Correo electrónico</label>
-            <input 
-                type="email" 
-                id="correo" 
-                placeholder="nombre@ejemplo.com">
-
-            <label for="rut">Rut</label>
-            <input 
-                type="text" 
-                id="rut" 
-                placeholder="20.213.017-8">
-
-            <label for="region">Seleccione Región</label>
-            <select id="region">
-                <option>Seleccione una región</option>
-            </select>
-
-            <label for="comuna">Seleccione Comuna</label>
-            <select id="comuna">
-                <option>Seleccione primero una región</option>
-            </select>
-
-            <label for="password">Contraseña</label>
-            <input 
-                type="password" 
-                id="password">
-
-            <label for="confirmar">Confirmar contraseña</label>
-            <input 
-                type="password" 
-                id="confirmar">
-
-            <label class="terminos">
-                <input type="checkbox">
-                Acepto los términos y condiciones
-            </label>
-
-            <button 
-                type="submit" 
-                class="btn-registrar">
-                Registrarse
-            </button>
-
-            <div class="iniciar-sesion">
-                ¿Ya tienes cuenta?
-                <a href="login.html">Inicia sesión</a>
+    <!-- Menú móvil -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="registro.html" class="boton-cuenta">Registro</a>
             </div>
-
-            <div class="iniciar-sesion mt-3">
-                <a href="index.html">Volver al inicio</a>
-            </div>
-
-        </form>
-
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+        </div>
+        <nav class="offcanvas__list">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__text">
+            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+        </div>
     </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="registro.html" id="botonCuenta" class="boton-cuenta">Registro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open" role="button" aria-label="Abrir menú"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Cabecera de página -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h1>Crear Cuenta</h1>
+                        <div class="breadcrumb__links">
+                            <a href="index.html">Inicio</a>
+                            <span>Crear cuenta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registro -->
+    <main>
+        <section class="auth">
+            <div class="container">
+                <div class="registro-container">
+
+                    <h2>Crear Cuenta</h2>
+
+                    <p>Ingresa tus datos para registrarte</p>
+
+                    <form>
+
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Juan Pérez">
+
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="nombre@ejemplo.com">
+
+                        <label for="rut">Rut</label>
+                        <input type="text" id="rut" placeholder="20.213.017-8">
+
+                        <label for="region">Seleccione Región</label>
+                        <select id="region">
+                            <option>Seleccione una región</option>
+                        </select>
+
+                        <label for="comuna">Seleccione Comuna</label>
+                        <select id="comuna">
+                            <option>Seleccione primero una región</option>
+                        </select>
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password">
+
+                        <label for="confirmar">Confirmar contraseña</label>
+                        <input type="password" id="confirmar">
+
+                        <label class="terminos">
+                            <input type="checkbox">
+                            Acepto los términos y condiciones
+                        </label>
+
+                        <button type="submit" class="btn-registrar">Registrarse</button>
+
+                        <div class="iniciar-sesion">
+                            ¿Ya tienes cuenta?
+                            <a href="login.html">Inicia sesión</a>
+                        </div>
+
+                        <div class="iniciar-sesion mt-3">
+                            <a href="index.html">Volver al inicio</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                        </div>
+                        <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Navegación</h6>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Tu cuenta</h6>
+                        <ul>
+                            <li><a href="registro.html">Registrarse</a></li>
+                            <li><a href="carrito.html">Mi carrito</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <p>© 2026 Tu Polera - Todos los derechos reservados</p>
+                        <p class="credito">Diseño basado en la plantilla Male Fashion de <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/regiones_comunas.js"></script>
     <script src="js/validaciones.js"></script>
+    <script src="js/cuenta.js"></script>
+    <script src="js/tema.js"></script>
 </body>
+
 </html>

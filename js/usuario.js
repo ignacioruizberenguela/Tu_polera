@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
         opcionAdmin.style.display = "block";
     }
 
-    // Botón cerrar sesión
-    const botonCerrarSesion = document.getElementById("cerrarSesion");
+    // Botón cerrar sesión (cabecera y menú móvil)
+    const botonesCerrarSesion = document.querySelectorAll("#cerrarSesion, .cerrar-sesion-movil");
 
-    if (botonCerrarSesion) {
+    botonesCerrarSesion.forEach(function (botonCerrarSesion) {
 
         botonCerrarSesion.addEventListener("click", function (event) {
 
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
 
-    }
+    });
 
 });
 

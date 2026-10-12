@@ -1,23 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const botonCuenta = document.getElementById("botonCuenta");
+    // El botón de cuenta aparece en la cabecera y en el menú móvil
+    const botonesCuenta = document.querySelectorAll("#botonCuenta, .boton-cuenta");
 
-    if (!botonCuenta) {
+    if (botonesCuenta.length === 0) {
         return;
     }
 
     const usuarioActual = localStorage.getItem("usuarioActual");
 
-    if (usuarioActual) {
+    botonesCuenta.forEach(function (botonCuenta) {
 
-        botonCuenta.textContent = "Mi cuenta";
-        botonCuenta.href = "usuario.html";
+        if (usuarioActual) {
 
-    } else {
+            botonCuenta.textContent = "Mi cuenta";
+            botonCuenta.href = "usuario.html";
 
-        botonCuenta.textContent = "Registro";
-        botonCuenta.href = "registro.html";
+        } else {
 
-    }
+            botonCuenta.textContent = "Registro";
+            botonCuenta.href = "registro.html";
+
+        }
+
+    });
 
 });

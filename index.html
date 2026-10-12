@@ -1,768 +1,379 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Polera</title>
 
-<title>Tu Polera</title>
+    <!-- Fuente de la plantilla Male Fashion -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- Bootstrap -->
-<link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- CSS propio -->
-<link rel="stylesheet" href="css/style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/elegant-icons.css">
 
+    <!-- CSS propio (tema Male Fashion) -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- Menú móvil -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="registro.html" class="boton-cuenta">Registro</a>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+        </div>
+        <nav class="offcanvas__list">
+            <ul>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__text">
+            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+        </div>
+    </div>
 
-<!-- ============================= -->
-<!-- NAVBAR -->
-<!-- ============================= -->
-
-<header>
-
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="registro.html" id="botonCuenta" class="boton-cuenta">Registro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open" role="button" aria-label="Abrir menú"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
 
-            <a class="navbar-brand text-white" href="index.html">
-                Tu polera
-            </a>
+    <!-- Hero -->
+    <section class="hero">
+        <div id="carruselHome" class="carousel slide carousel-fade hero__slider" data-bs-ride="carousel">
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menu">
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-
-                <ul class="navbar-nav mx-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
-                            Inicio
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html">
-                            Productos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">
-                            Nosotros
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogs.html">
-                            Blogs
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-
-
-                </ul>
-
-                <a
-                    href="carrito.html"
-                    class="btn btn-outline-light ms-3">
-                    🛒 Carrito
-
-                </a>
-
-
-                <a
-                    href="registro.html"
-                    id="botonCuenta"
-                    class="btn btn-outline-light ms-2">
-                    Registro
-
-                </a>
-
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="0" class="active" aria-label="Diapositiva 1"></button>
+                <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+                <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
             </div>
 
-        </div>
-
-    </nav>
-
-</header>
-
-
-<!-- ============================= -->
-<!-- CARRUSEL PRINCIPAL -->
-<!-- ============================= -->
-
-<section class="container my-5">
-
-    <div
-        id="carruselHome"
-        class="carousel slide carousel-home mx-auto"
-        data-bs-ride="carousel">
-
-        <div class="carousel-indicators">
-
-            <button
-                type="button"
-                data-bs-target="#carruselHome"
-                data-bs-slide-to="0"
-                class="active">
-            </button>
-
-            <button
-                type="button"
-                data-bs-target="#carruselHome"
-                data-bs-slide-to="1">
-            </button>
-
-            <button
-                type="button"
-                data-bs-target="#carruselHome"
-                data-bs-slide-to="2">
-            </button>
-
-        </div>
-
-
-        <div class="carousel-inner shadow rounded">
+            <div class="carousel-inner">
 
             <div class="carousel-item active">
-
-                <img
-                    src="imagenes/banner_placeholder.png"
-                    class="d-block w-100"
-                    alt="Poleras personalizadas">
-
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-
-                    <h1>
-                        Diseña tu estilo
-                    </h1>
-
-                    <p>
-                        Crea prendas personalizadas a tu gusto.
-                    </p>
-
-                    <a
-                        href="productos.html"
-                        class="btn btn-light">
-
-                        Ver productos
-
-                    </a>
-
+                <div class="hero__items" style="background-image: url('Imagenes/banner_placeholder.png');" role="img" aria-label="Poleras personalizadas">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 col-md-8">
+                                <div class="hero__text">
+                                    <h6>Poleras personalizadas</h6>
+                                    <h1>Diseña tu estilo</h1>
+                                    <p>Crea prendas personalizadas a tu gusto.</p>
+                                    <a href="productos.html" class="primary-btn">Ver productos <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
 
             <div class="carousel-item">
-
-                <img
-                    src="imagenes/banner_placeholder.png"
-                    class="d-block w-100"
-                    alt="Polerones personalizados">
-
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-
-                    <h1>
-                        Tu diseño, tu estilo
-                    </h1>
-
-                    <p>
-                        Personaliza tus prendas favoritas.
-                    </p>
-
-                    <a
-                        href="productos.html"
-                        class="btn btn-light">
-
-                        Comprar ahora
-
-                    </a>
-
+                <div class="hero__items" style="background-image: url('Imagenes/banner_placeholder.png');" role="img" aria-label="Polerones personalizados">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 col-md-8">
+                                <div class="hero__text">
+                                    <h6>Polerones personalizados</h6>
+                                    <h1>Tu diseño, tu estilo</h1>
+                                    <p>Personaliza tus prendas favoritas.</p>
+                                    <a href="productos.html" class="primary-btn">Comprar ahora <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
 
             <div class="carousel-item">
-
-                <img
-                    src="imagenes/banner_placeholder.png"
-                    class="d-block w-100"
-                    alt="Productos personalizados">
-
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-
-                    <h1>
-                        Productos únicos
-                    </h1>
-
-                    <p>
-                        Haz que cada producto sea especial.
-                    </p>
-
-                    <a
-                        href="productos.html"
-                        class="btn btn-light">
-
-                        Ver catálogo
-
-                    </a>
-
+                <div class="hero__items" style="background-image: url('Imagenes/banner_placeholder.png');" role="img" aria-label="Productos personalizados">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-7 col-md-8">
+                                <div class="hero__text">
+                                    <h6>Productos personalizados</h6>
+                                    <h1>Productos únicos</h1>
+                                    <p>Haz que cada producto sea especial.</p>
+                                    <a href="productos.html" class="primary-btn">Ver catálogo <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
             </div>
 
-        </div>
-
-
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carruselHome"
-            data-bs-slide="prev">
-
-            <span class="carousel-control-prev-icon"></span>
-
-            <span class="visually-hidden">
-                Anterior
-            </span>
-
-        </button>
-
-
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carruselHome"
-            data-bs-slide="next">
-
-            <span class="carousel-control-next-icon"></span>
-
-            <span class="visually-hidden">
-                Siguiente
-            </span>
-
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- ============================= -->
-<!-- CATEGORÍAS -->
-<!-- ============================= -->
-
-<section class="container my-5">
-
-    <h2 class="text-center mb-4">
-        Explora nuestras categorías
-    </h2>
-
-    <div class="row g-4">
-
-        <!-- POLERAS -->
-
-        <div class="col-12 col-md-4">
-
-            <a
-                href="productos.html?categoria=poleras"
-                class="text-decoration-none">
-
-                <div class="card categoria-card h-100 shadow-sm">
-
-                    <img
-                        src="imagenes/Poleras.png"
-                        class="card-img-top"
-                        alt="Poleras">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
-                            Poleras
-                        </h3>
-
-                        <p class="card-text text-muted">
-                            Descubre nuestras poleras personalizadas.
-                        </p>
-
-                        <span class="btn btn-dark">
-                            Ver poleras
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-
-        <!-- POLERONES -->
-
-        <div class="col-12 col-md-4">
-
-            <a
-                href="productos.html?categoria=polerones"
-                class="text-decoration-none">
-
-                <div class="card categoria-card h-100 shadow-sm">
-
-                    <img
-                        src="imagenes/Polerones.png"
-                        class="card-img-top"
-                        alt="Polerones">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
-                            Polerones
-                        </h3>
-
-                        <p class="card-text text-muted">
-                            Encuentra polerones personalizados.
-                        </p>
-
-                        <span class="btn btn-dark">
-                            Ver polerones
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-
-        <!-- GORROS -->
-
-        <div class="col-12 col-md-4">
-
-            <a
-                href="productos.html?categoria=gorras"
-                class="text-decoration-none">
-
-                <div class="card categoria-card h-100 shadow-sm">
-
-                    <img
-                        src="imagenes/Gorros.png"
-                        class="card-img-top"
-                        alt="Gorros">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
-                            Gorros
-                        </h3>
-
-                        <p class="card-text text-muted">
-                            Personaliza tu gorro a tu gusto.
-                        </p>
-
-                        <span class="btn btn-dark">
-                            Ver gorros
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ============================= -->
-<!-- PRODUCTOS DESTACADOS -->
-<!-- ============================= -->
-
-<section class="container my-5">
-
-    <h2 class="text-center mb-4">
-        Productos destacados
-    </h2>
-
-    <div
-        id="carruselProductos"
-        class="carousel slide"
-        data-bs-ride="carousel">
-
-        <div
-            id="productosDestacados"
-            class="carousel-inner">
-
-            <!-- Los productos se cargarán mediante JavaScript -->
-
-        </div>
-
-
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carruselProductos"
-            data-bs-slide="prev">
-
-            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
-
-            <span class="visually-hidden">
-                Anterior
-            </span>
-
-        </button>
-
-
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carruselProductos"
-            data-bs-slide="next">
-
-            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
-
-            <span class="visually-hidden">
-                Siguiente
-            </span>
-
-        </button>
-
-    </div>
-
-</section>
-
-<!-- ============================= -->
-<!-- CARRUSEL DE NOTICIAS -->
-<!-- ============================= -->
-
-<section class="container my-5">
-
-    <h2 class="text-center mb-4">
-        Noticias
-    </h2>
-
-    <div
-        id="carruselNoticias"
-        class="carousel slide carousel-noticias mx-auto"
-        data-bs-ride="carousel">
-
-        <div class="carousel-indicators">
-
-            <button
-                type="button"
-                data-bs-target="#carruselNoticias"
-                data-bs-slide-to="0"
-                class="active">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselHome" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
 
-            <button
-                type="button"
-                data-bs-target="#carruselNoticias"
-                data-bs-slide-to="1">
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselHome" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
-
-            <button
-                type="button"
-                data-bs-target="#carruselNoticias"
-                data-bs-slide-to="2">
-            </button>
-
         </div>
+    </section>
 
+    <!-- Categorías -->
+    <section class="banner spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Categorías</span>
+                        <h2>Explora nuestras categorías</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
 
-        <div class="carousel-inner shadow rounded">
+                <div class="col-lg-7 offset-lg-4">
+                    <div class="banner__item">
+                        <div class="banner__item__pic">
+                            <img src="Imagenes/poleras.png" alt="Poleras">
+                        </div>
+                        <div class="banner__item__text">
+                            <h2>Poleras</h2>
+                            <p>Descubre nuestras poleras personalizadas.</p>
+                            <a href="productos.html?categoria=poleras">Ver poleras</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="banner__item banner__item--middle">
+                        <div class="banner__item__pic">
+                            <img src="Imagenes/polerones.png" alt="Polerones">
+                        </div>
+                        <div class="banner__item__text">
+                            <h2>Polerones</h2>
+                            <p>Encuentra polerones personalizados.</p>
+                            <a href="productos.html?categoria=polerones">Ver polerones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="banner__item banner__item--last">
+                        <div class="banner__item__pic">
+                            <img src="Imagenes/gorros.png" alt="Gorros">
+                        </div>
+                        <div class="banner__item__text">
+                            <h2>Gorros</h2>
+                            <p>Personaliza tu gorro a tu gusto.</p>
+                            <a href="productos.html?categoria=gorras">Ver gorros</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Lo más visto</span>
+                        <h2>Productos destacados</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carruselProductos" class="carousel slide" data-bs-ride="carousel">
+
+                <div id="productosDestacados" class="carousel-inner">
+                    <!-- Los productos se cargarán mediante JavaScript -->
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselProductos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselProductos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias -->
+    <section class="spad pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Novedades</span>
+                        <h2>Noticias</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carruselNoticias" class="carousel slide carousel-noticias" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselNoticias" data-bs-slide-to="0" class="active" aria-label="Noticia 1"></button>
+                    <button type="button" data-bs-target="#carruselNoticias" data-bs-slide-to="1" aria-label="Noticia 2"></button>
+                    <button type="button" data-bs-target="#carruselNoticias" data-bs-slide-to="2" aria-label="Noticia 3"></button>
+                </div>
+
+                <div class="carousel-inner">
 
             <div class="carousel-item active">
-
-                <img
-                    src="imagenes/banner_placeholder.png"
-                    class="d-block w-100"
-                    alt="Nueva colección">
-
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-
-                    <h3>
-                        Nueva colección disponible
-                    </h3>
-
-                    <p>
-                        Ya puedes encontrar nuestra nueva colección.
-                    </p>
-
-                    <a
-                        href="productos.html"
-                        class="btn btn-light">
-
-                        Ver productos
-
-                    </a>
-
+                <img src="Imagenes/banner_placeholder.png" class="d-block w-100" alt="Nueva colección">
+                <div class="carousel-caption">
+                    <h3>Nueva colección disponible</h3>
+                    <p>Ya puedes encontrar nuestra nueva colección.</p>
+                    <a href="productos.html" class="primary-btn">Ver productos</a>
                 </div>
-
             </div>
-
 
             <div class="carousel-item">
-
-                <img
-                    src="imagenes/banner_placeholder.png"
-                    class="d-block w-100"
-                    alt="Descuentos">
-
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-
-                    <h3>
-                        ¡Descuentos especiales!
-                    </h3>
-
-                    <p>
-                        Aprovecha nuestras ofertas por tiempo limitado.
-                    </p>
-
-                    <a
-                        href="productos.html?descuento=25"
-                        class="btn btn-light">
-
-                        Ver ofertas
-
-                    </a>
-
+                <img src="Imagenes/banner_placeholder.png" class="d-block w-100" alt="Descuentos">
+                <div class="carousel-caption">
+                    <h3>¡Descuentos especiales!</h3>
+                    <p>Aprovecha nuestras ofertas por tiempo limitado.</p>
+                    <a href="productos.html?descuento=25" class="primary-btn">Ver ofertas</a>
                 </div>
-
             </div>
-
 
             <div class="carousel-item">
-
-                <img
-                    src="imagenes/banner_placeholder.png"
-                    class="d-block w-100"
-                    alt="Personalización">
-
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
-
-                    <h3>
-                        Personaliza tus productos
-                    </h3>
-
-                    <p>
-                        Crea diseños únicos para tus productos favoritos.
-                    </p>
-
-                    <a
-                        href="productos.html"
-                        class="btn btn-light">
-
-                        Personalizar
-
-                    </a>
+                <img src="Imagenes/banner_placeholder.png" class="d-block w-100" alt="Personalización">
+                <div class="carousel-caption">
+                    <h3>Personaliza tus productos</h3>
+                    <p>Crea diseños únicos para tus productos favoritos.</p>
+                    <a href="productos.html" class="primary-btn">Personalizar</a>
+                </div>
+            </div>
 
                 </div>
 
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselNoticias" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
 
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselNoticias" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </div>
+    </section>
 
-
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carruselNoticias"
-            data-bs-slide="prev">
-
-            <span class="carousel-control-prev-icon"></span>
-
-            <span class="visually-hidden">
-                Anterior
-            </span>
-
-        </button>
-
-
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carruselNoticias"
-            data-bs-slide="next">
-
-            <span class="carousel-control-next-icon"></span>
-
-            <span class="visually-hidden">
-                Siguiente
-            </span>
-
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- ============================= -->
-<!-- FOOTER -->
-<!-- ============================= -->
-
-<footer class="bg-dark text-white mt-5">
-
-    <div class="container py-5">
-
-        <div class="row g-4">
-
-            <div class="col-md-4">
-
-                <h4>
-                    Tu Polera
-                </h4>
-
-                <p class="text-secondary">
-                    Diseña y personaliza tus prendas
-                    para crear un estilo único.
-                </p>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                        </div>
+                        <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Navegación</h6>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Tu cuenta</h6>
+                        <ul>
+                            <li><a href="registro.html">Registrarse</a></li>
+                            <li><a href="carrito.html">Mi carrito</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="col-md-4">
-
-                <h5>
-                    Navegación
-                </h5>
-
-                <ul class="list-unstyled">
-
-                    <li class="mb-2">
-                        <a
-                            href="index.html"
-                            class="text-secondary text-decoration-none">
-
-                            Inicio
-
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a
-                            href="productos.html"
-                            class="text-secondary text-decoration-none">
-
-                            Productos
-
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a
-                            href="nosotros.html"
-                            class="text-secondary text-decoration-none">
-
-                            Nosotros
-
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a
-                            href="contacto.html"
-                            class="text-secondary text-decoration-none">
-
-                            Contacto
-
-                        </a>
-                    </li>
-
-                </ul>
-
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <p>© 2026 Tu Polera - Todos los derechos reservados</p>
+                        <p class="credito">Diseño basado en la plantilla Male Fashion de <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a></p>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="col-md-4">
-
-                <h5>
-                    Tu cuenta
-                </h5>
-
-                <ul class="list-unstyled">
-
-                    <li class="mb-2">
-                        <a
-                            href="registro.html"
-                            class="text-secondary text-decoration-none">
-
-                            Registrarse
-
-                        </a>
-                    </li>
-
-                    <li class="mb-2">
-                        <a
-                            href="carrito.html"
-                            class="text-secondary text-decoration-none">
-
-                            Mi carrito
-
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
         </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-        <hr class="border-secondary my-4">
-
-
-        <div class="text-center text-secondary">
-
-            <p class="mb-0">
-                © 2026 Tu Polera - Todos los derechos reservados
-            </p>
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-<!-- Bootstrap JavaScript -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-</script>
-
-
-<!-- JavaScript del Home -->
-
-<script src="js/index.js"></script>
-<script src="js/cuenta.js"></script>
-<script src="js/usuarios_iniciales.js"></script>
+    <!-- JavaScript del Home -->
+    <script src="js/index.js"></script>
+    <script src="js/cuenta.js"></script>
+    <script src="js/usuarios_iniciales.js"></script>
+    <script src="js/tema.js"></script>
 </body>
 
 </html>

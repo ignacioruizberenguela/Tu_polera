@@ -1,87 +1,222 @@
-<!DOCTYPE HTML>
-<HTML LANG="ES">
-    <HEAD>
-        <meta charset ="utf-8">
-        <title> nosotros - tu polera</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
-    </HEAD>
+<!DOCTYPE html>
+<html lang="es">
 
-    <body>
-            <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Tu Polera</title>
+
+    <!-- Fuente de la plantilla Male Fashion -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/elegant-icons.css">
+
+    <!-- CSS propio (tema Male Fashion) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Menú móvil -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="registro.html" class="boton-cuenta">Registro</a>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+        </div>
+        <nav class="offcanvas__list">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li class="active"><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__text">
+            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
             <div class="container">
-        
-                <a class="navbar-brand text-white" href="index.html">
-                    Tu polera
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">🏠Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="blogs.html">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-
-                    
-                    <a
-                        href="carrito.html"
-                        class="btn btn-outline-light ms-3">
-                        🛒 Carrito
-
-                    </a>
-
-                    <a
-                        href="registro.html"
-                        id="botonCuenta"
-                        class="btn btn-outline-light ms-2">
-                        Registro
-
-                    </a>
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="registro.html" id="botonCuenta" class="boton-cuenta">Registro</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li class="active"><a href="blogs.html">Blogs</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="carrito.html" aria-label="Carrito"><img src="img/icon/cart.png" alt="Carrito"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open" role="button" aria-label="Abrir menú"><i class="fa fa-bars"></i></div>
+        </div>
     </header>
-     
-    <div class="f-oswald"  >
-    <h1 class="novedades"> ⭐ novedades ⭐</h1>
-    <h2 class="titulo"> estrenamos nueva tecnologia de estampados y bordados</h2>
-    <p class="noticia">nuestro compromiso siempre ha sido entregar prendas que no solo se vean bien el primer día, sino que soporten el uso diario sin perder su color ni su forma. Por eso, nos complace anunciar que hemos actualizado los equipos e insumos de nuestro taller.
-        Con esta mejora, garantizamos estampados con detalles muchísimo más precisos, bordados de alta densidad y una resistencia al lavado significativamente superior. Ya sea que necesites un diseño complejo con degradados para una polera o un logo detallado para una gorra, 
-        el resultado tendrá una textura suave y un acabado profesional.</p>
-    <h3 class="titulo"> 🚀Lanzamiento de Nuevos Productos y Colores </h3>
-    <p class="parrafo"> Sumamos nuevas opciones de polerones oversize, gorras de distintos estilos y una paleta de colores renovada para que tus personalizaciones no tengan límites.
-        Sabemos que cada cliente tiene un estilo único, y por eso en [Nombre de tu Marca] acabamos de renovar completamente nuestro catálogo de prendas base para personalización.
-        A partir de esta semana, encontrarás disponibles: </p>
 
-    <h4 class=" titulo"> polerones oversize</h4>
-    <p class="parrafos">Un corte moderno, cómodo y de franela gruesa, ideal para la temporada.</p>
-    <h5 class="titulo">Nuevos estilos de Gorras</h5>
-    <p class="parrafos">Incorporamos modelos tipo Trucker y Dad Hats con viseras de alta calidad, perfectas para bordados frontales.</p>
-    <h6 class="titulo">Paleta de colores de temporada</h5>
-        <p class="parrafos">Añadimos tonos neutros, pasteles y colores de alto contraste en nuestras poleras de algodón 100%.</p>
-    </div>
-    </div>
-    
+    <!-- Cabecera de página -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h1>Blogs</h1>
+                        <div class="breadcrumb__links">
+                            <a href="index.html">Inicio</a>
+                            <span>Blogs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs / Novedades -->
+    <main class="pagina-texto">
+        <section class="spad pb-0">
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Blog</span>
+                    <h2>⭐ novedades ⭐</h2>
+                </div>
+
+                <div class="bloque">
+                    <div class="texto-centrado">
+                        <h3 class="mb-4">estrenamos nueva tecnologia de estampados y bordados</h3>
+                        <p>nuestro compromiso siempre ha sido entregar prendas que no solo se vean bien el primer día, sino que soporten el uso diario sin perder su color ni su forma. Por eso, nos complace anunciar que hemos actualizado los equipos e insumos de nuestro taller.
+                        Con esta mejora, garantizamos estampados con detalles muchísimo más precisos, bordados de alta densidad y una resistencia al lavado significativamente superior. Ya sea que necesites un diseño complejo con degradados para una polera o un logo detallado para una gorra,
+                        el resultado tendrá una textura suave y un acabado profesional.</p>
+                    </div>
+                </div>
+
+                <div class="bloque">
+                    <div class="texto-centrado">
+                        <h3 class="mb-4">🚀Lanzamiento de Nuevos Productos y Colores</h3>
+                        <p>Sumamos nuevas opciones de polerones oversize, gorras de distintos estilos y una paleta de colores renovada para que tus personalizaciones no tengan límites.
+                        Sabemos que cada cliente tiene un estilo único, y por eso en [Nombre de tu Marca] acabamos de renovar completamente nuestro catálogo de prendas base para personalización.
+                        A partir de esta semana, encontrarás disponibles:</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="spad">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="noticia-item">
+                            <h4>polerones oversize</h4>
+                            <p>Un corte moderno, cómodo y de franela gruesa, ideal para la temporada.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="noticia-item">
+                            <h4>Nuevos estilos de Gorras</h4>
+                            <p>Incorporamos modelos tipo Trucker y Dad Hats con viseras de alta calidad, perfectas para bordados frontales.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="noticia-item">
+                            <h4>Paleta de colores de temporada</h4>
+                            <p>Añadimos tonos neutros, pasteles y colores de alto contraste en nuestras poleras de algodón 100%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="logo-text">Tu <span>Polera</span></a>
+                        </div>
+                        <p>Diseña y personaliza tus prendas para crear un estilo único.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Navegación</h6>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Tu cuenta</h6>
+                        <ul>
+                            <li><a href="registro.html">Registrarse</a></li>
+                            <li><a href="carrito.html">Mi carrito</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <p>© 2026 Tu Polera - Todos los derechos reservados</p>
+                        <p class="credito">Diseño basado en la plantilla Male Fashion de <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/cuenta.js"></script>
-    </body>
+    <script src="js/tema.js"></script>
+</body>
+
 </html>

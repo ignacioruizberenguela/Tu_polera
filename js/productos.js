@@ -74,27 +74,21 @@ function mostrarProductos(listaProductos) {
         if (descuento === 0) {
 
             informacionPrecio = `
-                <p class="fw-bold">
-                    $${precio.toLocaleString("es-CL")}
-                </p>
+                <div class="precio">
+                    <h5>
+                        $${precio.toLocaleString("es-CL")}
+                    </h5>
+                </div>
             `;
 
         } else {
 
             informacionPrecio = `
-                <p class="fw-normal text-muted mb-1">
-                    <s>
-                        $${precio.toLocaleString("es-CL")}
-                    </s>
-
-                    <span class="text-success ms-2">
-                        -${descuento}%
-                    </span>
-                </p>
-
-                <p class="fw-bold">
-                    $${precioFinal.toLocaleString("es-CL")}
-                </p>
+                <div class="precio">
+                    <h5>
+                        <s class="precio-antes">$${precio.toLocaleString("es-CL")}</s>$${precioFinal.toLocaleString("es-CL")}
+                    </h5>
+                </div>
             `;
         }
 
@@ -106,45 +100,52 @@ function mostrarProductos(listaProductos) {
             "col-12 col-md-6 col-lg-4";
 
 
+        const claseSale =
+            descuento > 0 ? " sale" : "";
+
+
+        const etiqueta =
+            descuento > 0
+                ? `<span class="label">-${descuento}%</span>`
+                : "";
+
+
         columna.innerHTML = `
             <div
-                class="card h-100 shadow-sm producto"
+                class="product__item producto${claseSale}"
                 data-id="${producto.id}">
 
-                <img
-                    src="${producto.imagen}"
-                    class="card-img-top"
-                    alt="${producto.nombre}">
+                <div class="product__item__pic">
 
-                <div class="card-body d-flex flex-column">
+                    ${etiqueta}
 
-                    <h2 class="card-title fs-4">
+                    <img
+                        src="${producto.imagen}"
+                        alt="${producto.nombre}">
+
+                </div>
+
+                <div class="product__item__text">
+
+                    <h6>
                         ${producto.nombre}
-                    </h2>
+                    </h6>
 
-                    <p class="card-text">
+                    <button
+                        type="button"
+                        class="add-cart btn-ver-producto"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalProducto">
+
+                        + Ver producto
+
+                    </button>
+
+                    <p class="producto-desc">
                         ${producto.descripcion || ""}
                     </p>
 
-                    <div class="precio pt-0 mb-4">
-
-                        ${informacionPrecio}
-
-                    </div>
-
-                    <div class="mt-auto">
-
-                        <button
-                            type="button"
-                            class="btn btn-dark btn-ver-producto"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalProducto">
-
-                            Ver producto
-
-                        </button>
-
-                    </div>
+                    ${informacionPrecio}
 
                 </div>
 
