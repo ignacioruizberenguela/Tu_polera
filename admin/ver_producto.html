@@ -18,43 +18,64 @@
 <div class="container-fluid">
     <div class="row min-vh-100">
 
-        <!-- SIDEBAR -->
-        <div class="col-md-3 col-lg-2 bg-dark text-white p-0">
+        <!-- BARRA LATERAL -->
+
+        <aside class="col-md-3 col-lg-2 bg-dark text-white p-0">
 
             <div class="p-4">
-                <h3>Tu Polera</h3>
-                <p class="text-secondary">
+
+                <h4 class="mb-4">
+                    Tu Polera
+                </h4>
+
+                <p class="text-secondary small">
                     PANEL DE ADMINISTRACIÓN
                 </p>
+
+                <hr>
+
+                <nav class="nav flex-column">
+
+                    <a href="admin_index.html"
+                       class="nav-link text-white mb-2">
+
+                        Inicio
+
+                    </a>
+
+
+                    <a href="admin_productos.html"
+                       class="nav-link active text-white mb-2">
+
+                        Productos
+
+                    </a>
+
+
+                    <a href="admin_usuarios.html"
+                       class="nav-link text-white mb-2">
+
+                        Usuarios
+
+                    </a>
+
+                </nav>
+
             </div>
 
-            <div class="list-group list-group-flush">
 
-                <a href="admin_index.html"
-                   class="list-group-item list-group-item-action bg-dark text-white">
-                    Inicio
-                </a>
+            <div class="position-absolute bottom-0 p-4">
 
-                <a href="admin_productos.html"
-                   class="list-group-item list-group-item-action bg-dark text-white">
-                    Productos
-                </a>
-
-                <a href="admin_usuarios.html"
-                   class="list-group-item list-group-item-action bg-dark text-white">
-                    Usuarios
-                </a>
-
-            </div>
-
-            <div class="p-4 mt-auto">
                 <a href="../index.html"
-                   class="btn btn-outline-light w-100">
+                   class="btn btn-outline-light">
+
                     Volver a la tienda
+
                 </a>
+
             </div>
 
-        </div>
+        </aside>
 
 
         <!-- CONTENIDO -->
